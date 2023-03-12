@@ -80,7 +80,11 @@
 	</header>
 	<section class="present">
 		<div class="present__container container">
-			<img src="/images/photo.jpg" alt="Photo of webdesigner" class="present__photo">
+			<picture class="present__photo">
+				<source srcset='/images/photo.avif' type="image/avif">
+				<source srcset='/images/photo.webp' type="image/webp">
+				<img src="/images/photo.jpg" alt="Photo of webdesigner">
+			</picture>
 			<div class="present__content">
 				<hgroup class="present__group--title">
 					<h1 class="present__title">Марина Хадиева</h1>
