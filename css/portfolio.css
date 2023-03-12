@@ -1,0 +1,161 @@
+.portfolio {}
+
+.container {}
+
+.portfolio__title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 120%;
+	color: #110303;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+.portfolio__slider {
+	position: relative;
+	max-width: 290px;
+	margin: 0 auto;
+}
+
+.portfolio__list {}
+
+.portfolio__item {}
+
+.card {
+	box-sizing: border-box;
+	max-width: 252px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	padding: 20px 14px;
+}
+
+.card__picture {
+	align-self: center;
+	width: 152px;
+	height: 92px;
+	background-image: url('/images/macbook.svg');
+	padding: 5px 18px 12px;
+	background-size: cover;
+	margin-bottom: 30px;
+}
+
+.card__data {
+	font-size: 14px;
+	font-weight: 600;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 23px;
+}
+
+.card__client {
+	line-height: 17px;
+}
+
+.card__date {
+	line-height: 20px;
+
+}
+
+.card__title {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+}
+
+.portfolio__arrow {
+	display: block;
+	background-image: url('/images/arrow.svg');
+	width: 26px;
+	height: 26px;
+	block-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 40%;
+	z-index: 1;
+
+}
+
+.portfolio__arrow--left {
+	left: 0px;
+}
+
+.portfolio__arrow--right {
+	right: 0px;
+	transform: rotate(180deg);
+}
+
+.portfolio__arrow--disable {
+	opacity: 0.3;
+	pointer-events: none;
+}
+
+.disable {
+	display: none;
+}
+
+@media(min-width: 480px) {
+	.portfolio__slider {
+		max-width: 340px;
+	}
+
+	.portfolio__title {
+		font-size: 40px;
+	}
+}
+
+@media(min-width: 768px) {
+	.portfolio__slider {
+		max-width: 688px;
+	}
+
+	.portfolio__item:nth-child(2n) {
+		background: -moz-linear-gradient(90.67deg, #ECEBEB 0.55%, #F7F7F7 99.42%);
+		/* FF3.6-15 */
+		background: -webkit-linear-gradient(90.67deg, #ECEBEB 0.55%, #F7F7F7 99.42%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(90.67deg, #ECEBEB 0.55%, #F7F7F7 99.42%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ECEBEB', endColorstr='#F7F7F7', GradientType=1);
+		/* IE6-9 fallback on horizontal gradient */
+
+	}
+}
+
+@media(min-width: 992px) {
+	.portfolio__slider {
+		max-width: 690px;
+	}
+}
+
+@media(min-width: 1440px) {
+	.portfolio__slider {
+		max-width: 825px;
+	}
+
+	.portfolio__title {
+		font-size: 50px;
+		margin-bottom: 80px;
+	}
+
+	.card {
+		max-width: 366px;
+	}
+
+	.card__data {
+		font-size: 16px;
+		margin-bottom: 14px;
+	}
+
+	.card__title {
+		font-size: 18px;
+	}
+
+	.card__picture {
+		width: 213px;
+		height: 126px;
+		padding: 5px 26px 15px;
+	}
+
+}
