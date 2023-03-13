@@ -89,3 +89,55 @@
 	top: 10px;
 	right: 10px;
 }
+
+@media(min-width: 768px) {
+	.modal {
+		min-width: 760px;
+		padding: 70px 85px 82px 85px;
+	}
+
+	.modal__title {
+		font-size: 18px;
+		margin-bottom: 50px;
+		min-width: 490px;
+	}
+
+	.callback__group {
+		margin-bottom: 28px;
+	}
+
+	.connect__title {
+		font-size: 18px;
+		margin-bottom: 50px;
+	}
+
+	.callback__input {
+		font-size: 16px;
+	}
+
+	.connect__radio {
+		margin-right: 65px;
+	}
+
+	.callback__btn {
+		margin: 0 0 0 auto;
+	}
+}
+
+@media(min-width: 1440px) {
+	.modal {
+		min-width: 1010px;
+		padding: 70px 99px 82px 131px;
+	}
+
+
+	.modal__title {
+		font-size: 20px;
+		margin-bottom: 50px;
+	}
+
+	.connect__title {
+		font-size: 20px;
+		margin-bottom: 50px;
+	}
+}
